@@ -8,4 +8,5 @@ import (
 
 func UserRouters(inComingRoutes *gin.Engine) {
 	inComingRoutes.GET("/api/health", controllers.HealthCheck());
+	inComingRoutes.POST("/api/register", controllers.Register());
 }
